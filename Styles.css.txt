@@ -1,0 +1,21 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #87CEEB; /* Light blue background */
+}
+
+#frog-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Ensures the frog doesn't interfere with clicks */
+}
+
+#frog {
+    width: 100px; /* Adjust the size of the frog */
+    height: auto;
+    transition: transform 0.1s ease-out; /* Smooth movement */
+}

@@ -1,0 +1,11 @@
+// Get the frog element
+const frog = document.getElementById('frog');
+
+// Update the frog's position based on the mouse cursor
+document.addEventListener('mousemove', (event) => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    // Move the frog to the cursor position
+    frog.style.transform = `translate(${mouseX - 50}px, ${mouseY - 50}px)`; // Adjust for centering
+});
